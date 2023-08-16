@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+/*Menu*/
+.menu{
+    display: flex;
+    position: fixed;
+    background-color: #181818;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 9;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 0px 20px 0px 20px;
+}
+
+.nav-list a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*Main*/
+body{
+    font-family:'Roboto', sans-serif;;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    background-image: url(../images/programador.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(110vh - 80px);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    
+}
+
+.main h1 {
+    color: #ffff;
+    font-size: 54px;
+}
+
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96fc;
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+.btn{
+    background-color: #ffff;
+    border: 0;
+    border-radius: 5px;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9S;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.main a{
+text-decoration: none;
+color: #181818;
+}
+
+/*Sobre*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    width: 100%;
+    padding: 80px 10% 10% 80px;
+}
+
+.about p {
+    text-align: start;
+    font-size: 24px;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.about div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+/* Projetos*/
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projects p{
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.projects-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img{
+    width: 22%;
+    margin-left:0.5%;
+    margin-right: 0.5%;
+    opacity: 0.5;
+    transition: 0.9s;
+}
+
+.projects img:hover{
+    opacity: 1;
+}
+.action{
+    background-color: #181818;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+.action:hover{
+    background-color: rgb(58, 57, 57);
+}
+
+/*RODAPE*/
+
+footer{
+    width: 100%;
+    background-color: #181818;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    color: #ffff;
+}
+footer p {
+    margin-left: 12px;
+}
+
+@media screen and (max-width:758px){
+
+    .about{
+        width: 100%;
+        flex-direction: column;
+    }
+    .about div {
+        max-width: 100%;
+    }
+    .about div p {
+        
+        line-height: 1.3em;
+        font-size: 20px;
+    }
+
+    .about img{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .projects-list{
+        flex-direction: column;
+    }
+
+    .projects img{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
