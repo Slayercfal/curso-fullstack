@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 5px 5px 0px 0px;
+    width: 350px;
+    height: 50%;
+    border: 1px solid rgba(148, 144, 144, 0.404);
+}
+
+.container h1{
+    margin: 80px 0px 10px 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.container p {
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.inputs{
+    border-radius: 4px;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 90%;
+}
+
+.btn{
+    border: 0;
+    background-color:#0056fb;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:#0345be ;
+}
+
+.bottom{
+    border-radius: 5px 0px 0px 5px;
+    background-color: blue;
+    width: 350px;
+    height: 50%;
+}
+
+.bottom img{
+    width: 80%;
+    margin: 40px 30px;
+}
+
+.bottom h1{
+    font-size: 26px;
+    color: white;
+    margin-left: 10%;
+}
+
+.bottom p{
+    width: 80%;
+    margin-top: 10px;
+    color: white;
+    margin-left: 10%;
+}
+
+
+@media screen and (min-width:768px){
+
+    body{
+        flex-direction: row;
+    }
+
+    .container{
+        width: 620px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .container h1{
+       margin-right: 32%;
+    }
+
+    .container p{
+        margin-right: 28%;
+        
+     }
+
+    .inputs{
+        width: 400px;
+    }
+    .bottom{
+        width: 620px;
+        height: 80%;
+        border-radius: 0px 5px 5px 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom img{
+        margin-top: -5%;
+        width: 70%;
+        height: 40%;
+    }
+
+    .bottom h1{
+        font-size: 38px;
+        width: 80%;
+    }
+
+    .bottom p{
+        margin-top: 20px;
+        width: 80%;
+    }
+
+
+
+    }
+
