@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="informaçoes">
+            <p>Abaixo de 17: Muito abaixo do peso</p>
+            <p>entre 17 e 18.49: Abaixo do peso</p>
+            <p>Entre 18,5 e 24.99: Peso Normal</p>
+            <p>Entre 25 e 29.99: Acima do peso</p>
+            <p>Acima de 30: Muito acima do peso</p>
+        </div>
+        <form action="" onsubmit="return calcular(event)" class="forms">
+        
+            <label for="ipeso">Digite seu peso:</label>
+            <input type="text" name="ipeso" id="ipeso" placeholder="Exemplo: 70">
+        
+            <label for="ialtura">Digite sua altura:</label>
+            <input type="text" name="ialtura" id="ialtura" placeholder="Exemplo: 1.70">
+        
+            <input type="submit" value="Calcular" class="btn">
+        
+        </form>
+        <div id="resultado">
+        
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
