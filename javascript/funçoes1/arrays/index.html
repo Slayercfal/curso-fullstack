@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(224, 222, 222);
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 400px;
+            height: 400px;
+            background-image: linear-gradient( to bottom, #ffff , red);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px black;
+        }
+        h1{
+            color: white;
+            text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.692);
+        }
+        input{
+            padding: 10px;
+            margin: 10px  0px;
+            border-radius: 8px;
+            border: 0;
+            outline: none;
+            background-color: rgb(226, 192, 192);
+        }
+
+        input:focus{
+            background-color: white;
+        }
+        label{
+            color: #ffff;
+        }
+        #btn{
+            width: 180px;
+            padding: 10px;
+            background-color: #ffff;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #btn:hover{
+            color: white;
+            background-color: rgb(145, 140, 140);
+        }
+        h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculador de Media</h1>
+        <div>
+            <label for="num1">Primeira nota:</label><br>
+            <input type="number" name="Numero" id="num1">
+        </div>
+
+        <div>
+            <label for="num2">Segunda nota:</label><br>
+            <input type="number" name="iNumero" id="num2">
+        </div>
+
+        <button id="btn" onclick="calcular()">Calcular</button>
+
+        <div id="area">
+            <h2></h2>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
