@@ -1,4 +1,4 @@
-
+/*
 var arena = document.getElementById('area')
 
 
@@ -41,3 +41,71 @@ function aluno(nome, curso){
 
     console.log(mensagem)
 }
+
+
+
+*/
+
+
+
+// FUNÇAO ANONIMA 
+
+
+/* () => {}
+
+
+    1- PARENTESES, QUE E POR ONDE A FUNÇAO RECEBE OS ARGUMENTOS(ASSIM COMO AS TRADICIONAIS)
+    2- 'SETA' => - RESPONSAVEL PELO NOME 'ARROW'
+    3= E AS CHAVES O BLOCO DE CODIGO QUE REPRESENTA O CORPTO DA FUNÇAO
+*/ 
+
+/*
+function somar(a, b){
+    let total = a + b
+    console.log(total)
+}
+
+somar(10, 30)
+
+
+let subtrair = (valor1 , valor2) => {
+    let total =  valor1 - valor2
+
+    console.log(total);
+}
+
+subtrair(40, 20)
+
+let numeros = [1 ,3 ,5 ,10]
+
+
+numeros.map((item) => {
+    console.log(item)
+})
+
+*/
+
+
+
+//includes, startswith, endswith
+
+
+
+/*
+let nomes = ['abilio', 'vinicius', 'bruno', 'maria', 'pedro']
+
+
+//console.log(nomes.includes('abilio'))
+
+if(nomes.includes('maria')){
+    console.log('Esta na lista')
+}else{
+    console.log('Nao esta na lista')
+}
+
+
+*/
+
+let nome = 'abilio'
+
+console.log(nome.endsWith('lio'))
